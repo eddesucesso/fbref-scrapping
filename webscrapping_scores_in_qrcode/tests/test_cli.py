@@ -1,6 +1,4 @@
 import pytest
-
-from chispa import assert_column_equality
 import pyspark.sql.functions as F
 from pyspark.sql.types import IntegerType, StringType
 from pyspark.sql import SparkSession
