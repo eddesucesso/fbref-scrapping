@@ -28,7 +28,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r webscrapping_scores_in_qrcode/requirements.txt
       - name: Test with pytest
-        uses: actions/setup-python@v4
         run: |
           pip install pytest pytest-cov
           pytest webscrapping_scores_in_qrcode/tests/test_cli.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
