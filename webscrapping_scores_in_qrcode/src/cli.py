@@ -4,9 +4,11 @@ from pyspark.sql import functions as f, DataFrame
 from pyspark.sql.types import IntegerType
 
 
-
-
 class ExtractData:
+    """_summary_
+
+    Class responsible to make functions to extract and sent data
+    """
     def __init__(self, years: int, spark_session):
         """
         _summary_
